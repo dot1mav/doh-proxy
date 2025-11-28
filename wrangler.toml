@@ -1,0 +1,17 @@
+name = "doh"
+main = "index.js"
+compatibility_date = "2025-11-28"
+
+[vars]
+# Option 1: single upstream (legacy style)
+# UPSTREAM = "https://cloudflare-dns.com/dns-query"
+
+# Option 2: multiple upstreams (comma-separated)
+#UPSTREAMS = "https://cloudflare-dns.com/dns-query,https://dns.google/dns-query,https://dns.adguard-dns.com/dns-query"
+
+[observability]
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+invocation_logs = true
+persist = true
